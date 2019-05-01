@@ -1,0 +1,226 @@
+/* appearance */
+@keyframes appearance_top_left {
+  0%   {opacity:0; left:0px; top:0px;}
+  100% {opacity:1; left:0px; top:0px;}
+}
+@keyframes appearance_top_center {
+  0%   {opacity:0; left:calc(50% - 25px); top:0px;}
+  100% {opacity:1; left:calc(50% - 25px); top:0px;}
+}
+@keyframes appearance_top_right {
+  0%   {opacity:0; left:calc(100% - 50px); top:0px;}
+  100% {opacity:1; left:calc(100% - 50px); top:0px;}
+}
+@keyframes appearance_middle_left {
+  0%   {opacity:0; left:0px; top:calc(50% - 25px);}
+  100% {opacity:1; left:0px; top:calc(50% - 25px);}
+}
+@keyframes appearance_middle_center {
+  0%   {opacity:0; left:calc(50% - 25px); calc(50% - 25px);}
+  100% {opacity:1; left:calc(50% - 25px); calc(50% - 25px);}
+}
+@keyframes appearance_middle_right {
+  0%   {opacity:0; left:calc(100% - 50px); top:calc(50% - 25px);}
+  100% {opacity:1; left:calc(100% - 50px); top:calc(50% - 25px);}
+}
+/* disappearance */
+@keyframes disappearance_top_left {
+  0%   {opacity:1; left:0px; top:0px;}
+  100% {opacity:0; left:0px; top:0px;}
+}
+@keyframes disappearance_top_center {
+  0%   {opacity:1; left:calc(50% - 25px); top:0px;}
+  100% {opacity:0; left:calc(50% - 25px); top:0px;}
+}
+@keyframes disappearance_top_right {
+  0%   {opacity:1; left:calc(100% - 50px); top:0px;}
+  100% {opacity:0; left:calc(100% - 50px); top:0px;}
+}
+@keyframes disappearance_middle_left {
+  0%   {opacity:1; left:0px; top:calc(50% - 25px);}
+  100% {opacity:0; left:0px; top:calc(50% - 25px);}
+}
+@keyframes disappearance_middle_center {
+  0%   {opacity:1; left:calc(50% - 25px); calc(50% - 25px);}
+  100% {opacity:0; left:calc(50% - 25px); calc(50% - 25px);}
+}
+@keyframes disappearance_middle_right {
+  0%   {opacity:1; left:calc(100% - 50px); top:calc(50% - 25px);}
+  100% {opacity:0; left:calc(100% - 50px); top:calc(50% - 25px);}
+}
+/* set #0 */
+@keyframes vertical {
+  0%   {left:calc(50% - 25px); top:0px;}
+  50%  {left:calc(50% - 25px); top:calc(100% - 50px);}
+  100% {left:calc(50% - 25px); top:0px;}
+}
+@keyframes horizontal {
+  0%   {left:0px; top:calc(50% - 25px);}
+  50%  {left:calc(100% - 50px); top:calc(50% - 25px);}
+  100% {left:0px; top:calc(50% - 25px);}
+}
+@keyframes diagonal_left {
+  0%   {left:0px; top:0px;}
+  50%  {left:calc(100% - 50px); top:calc(100% - 50px);}
+  100% {left:0px; top:0px;}
+}
+@keyframes diagonal_right {
+  0%   {left:calc(100% - 50px); top:0px;}
+  50%  {left:0px; top:calc(100% - 50px);}
+  100% {left:calc(100% - 50px); top:0px;}
+}
+@keyframes rhomb_left {
+  0%   {left:0px; top:calc(50% - 25px);}
+  25%  {left:calc(50% - 25px); top:0px;}
+  50%  {left:calc(100% - 50px); top:calc(50% - 25px);}
+  75%  {left:calc(50% - 25px); top:calc(100% - 50px);}
+  100% {left:0px; top:calc(50% - 25px);}
+}
+@keyframes rhomb_right {
+  0%   {left:calc(100% - 50px); top:calc(50% - 25px);}
+  25%  {left:calc(50% - 25px); top:0px;}
+  50%  {left:0px; top:calc(50% - 25px);}
+  75%  {left:calc(50% - 25px); top:calc(100% - 50px);}
+  100% {left:calc(100% - 50px); top:calc(50% - 25px);}
+}
+/* set #1 */
+@keyframes rectangle_left {
+  0%   {left:0px; top:0px;}
+  30%  {left:calc(100% - 50px); top:0px;}
+  50%  {left:calc(100% - 50px); top:calc(100% - 50px);}
+  80%  {left:0px; top:calc(100% - 50px);}
+  100% {left:0px; top:0px;}
+}
+@keyframes rectangle_right {
+  0%   {left:calc(100% - 50px); top:0px;}
+  30%  {left:0px; top:0px;}
+  50%  {left:0px; top:calc(100% - 50px);}
+  80%  {left:calc(100% - 50px); top:calc(100% - 50px);}
+  100% {left:calc(100% - 50px); top:0px;}
+}
+@keyframes sandclock_left {
+  0%   {left:0px; top:0px;}
+  23%  {left:calc(100% - 50px); top:0px;}
+  50%  {left:0px; top:calc(100% - 50px);}
+  73%  {left:calc(100% - 50px); top:calc(100% - 50px);}
+  100% {left:0px; top:0px;}
+}
+@keyframes sandclock_right {
+  0%   {left:calc(100% - 50px); top:0px;}
+  23%  {left:0px; top:0px;}
+  50%  {left:calc(100% - 50px); top:calc(100% - 50px);}
+  73%  {left:0px; top:calc(100% - 50px);}
+  100% {left:calc(100% - 50px); top:0px;}
+}
+@keyframes butterfly_left {
+  0%   {left:0px; top:0px;}
+  30%  {left:calc(100% - 50px); top:calc(100% - 50px);}
+  50%  {left:calc(100% - 50px); top:0px;}
+  80%  {left:0px; top:calc(100% - 50px);}
+  100% {left:0px; top:0px;}
+}
+@keyframes butterfly_right {
+  0%   {left:calc(100% - 50px); top:0px;}
+  20%  {left:calc(100% - 50px); top:calc(100% - 50px);}
+  50%  {left:0px; top:0px;}
+  70%  {left:0px; top:calc(100% - 50px);}
+  100% {left:calc(100% - 50px); top:0px;}
+}
+/* set #2 */
+@keyframes chess_left {
+  0%   {left:0px; top:0px;}
+  15%  {left:calc(50% - 25px); top:0px;}
+  35%  {left:calc(50% - 25px); top:calc(100% - 50px);}
+  50%  {left:calc(100% - 50px); top:calc(100% - 50px);}
+  65%  {left:calc(100% - 50px); top:calc(50% - 25px);}
+  85%  {left:0px; top:calc(50% - 25px);}
+  100% {left:0px; top:0px;}
+}
+@keyframes chess_right {
+  0%   {left:calc(100% - 50px); top:0px;}
+  15%  {left:calc(50% - 25px); top:0px;}
+  35%  {left:calc(50% - 25px); top:calc(100% - 50px);}
+  50%  {left:0px; top:calc(100% - 50px);}
+  65%  {left:0px; top:calc(50% - 25px);}
+  85%  {left:calc(100% - 50px); top:calc(50% - 25px);}
+  100% {left:calc(100% - 50px); top:0px;}
+}
+@keyframes triangle_left {
+  0%   {left:0px; top:0px;}
+  15%  {left:calc(100% - 50px); top:0px;}
+  35%  {left:0px; top:calc(100% - 50px);}
+  50%  {left:calc(100% - 50px); top:calc(100% - 50px);}
+  65%  {left:calc(100% - 50px); top:0px;}
+  85%  {left:0px; top:calc(100% - 50px);}
+  100% {left:0px; top:0px;}
+}
+@keyframes triangle_right {
+  0%   {left:calc(100% - 50px); top:0px;}
+  15%  {left:0px; top:0px;}
+  35%  {left:calc(100% - 50px); top:calc(100% - 50px);}
+  50%  {left:0px; top:calc(100% - 50px);}
+  65%  {left:0px; top:0px;}
+  80%  {left:calc(100% - 50px); top:calc(100% - 50px);}
+  100% {left:calc(100% - 50px); top:0px;}
+}
+/* set #3 */
+@keyframes sight_left {
+  0%   {left:0px; top:0px;}
+  8%   {left:calc(50% - 25px); top:0px;}
+  16%  {left:calc(50% - 25px); top:calc(100% - 50px);}
+  24%  {left:0px; top:calc(100% - 50px);}
+  32%  {left:0px; top:calc(50% - 25px);}
+  42%  {left:calc(100% - 50px); top:calc(50% - 25px);}
+  50%  {left:calc(100% - 50px); top:calc(100% - 50px);}
+  58%  {left:calc(50% - 25px); top:calc(100% - 50px);}
+  66%  {left:calc(50% - 25px); top:0px;}
+  74%  {left:calc(100% - 50px); top:0px;}
+  82%  {left:calc(100% - 50px); top:calc(50% - 25px);}
+  90%  {left:0px; top:calc(50% - 25px);}
+  100% {left:0px; top:0px;}
+}
+@keyframes sight_right {
+  0%   {left:calc(100% - 50px); top:0px;}
+  8%   {left:calc(50% - 25px); top:0px;}
+  16%  {left:calc(50% - 25px); top:calc(100% - 50px);}
+  24%  {left:calc(100% - 50px); top:calc(100% - 50px);}
+  32%  {left:calc(100% - 50px); top:calc(50% - 25px);}
+  42%  {left:0px; top:calc(50% - 25px);}
+  50%  {left:0px; top:calc(100% - 50px);}
+  58%  {left:calc(50% - 25px); top:calc(100% - 50px);}
+  66%  {left:calc(50% - 25px); top:0px;}
+  74%  {left:0px; top:0px;}
+  82%  {left:0px; top:calc(50% - 25px);}
+  92%  {left:calc(100% - 50px); top:calc(50% - 25px);}
+  100% {left:calc(100% - 50px); top:0px;}
+}
+@keyframes corners_left {
+  0%   {left:0px; top:0px;}
+  14%  {left:calc(100% - 50px); top:calc(100% - 50px);}
+  25%  {left:0px; top:calc(100% - 50px);}
+  39%  {left:calc(100% - 50px); top:0px;}
+  50%  {left:calc(100% - 50px); top:calc(100% - 50px);}
+  64%  {left:0px; top:0px;}
+  75%  {left:calc(100% - 50px); top:0px;}
+  89%  {left:0px; top:calc(100% - 50px);}
+  100% {left:0px; top:0px;}
+}
+@keyframes corners_right {
+  0%   {left:calc(100% - 50px); top:0px;}
+  14%  {left:0px; top:calc(100% - 50px);}
+  25%  {left:calc(100% - 50px); top:calc(100% - 50px);}
+  39%  {left:0px; top:0px;}
+  50%  {left:0px; top:calc(100% - 50px);}
+  64%  {left:calc(100% - 50px); top:0px;}
+  75%  {left:0px; top:0px;}
+  89%  {left:calc(100% - 50px); top:calc(100% - 50px);}
+  100% {left:calc(100% - 50px); top:0px;}
+}
+/*  
+animation: vertical 4s 2s 16;
+animation-name: vertical;
+animation-duration: 4s;
+animation-iteration-count: 16;
+animation-direction: reverse;
+animation-delay: 2s;
+*/

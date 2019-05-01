@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <title>Clear iSight</title>
+      <meta name="description" content="Eyes gymnastics">
+      <meta name="keywords" content="eyes gymnastics, ocular exercises">
+      <meta name="google-site-verification" content="DMqsFTrzJSkGvhOl1JtIsmI2F6n9ZPE2KQhngaZsmyw" />
+      <meta name="yandex-verification" content="2f7297295446adf5" />
+      <meta name="msvalidate.01" content="E1043DD2E016CF597EF7A9090F1E6FE2" />
+      <!-- Yandex.Metrika -->
+      <script type="text/javascript" >
+         (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+         m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+         (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+         ym(51655193, "init", {
+              id:51655193,
+              clickmap:true,
+              trackLinks:true,
+              accurateTrackBounce:true
+         });
+      </script>
+      <noscript><div><img src="https://mc.yandex.ru/watch/51655193" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+      <!-- /Yandex.Metrika -->
+      <link rel="stylesheet" type="text/css" href="css_layout.css">
+      <link rel="stylesheet" type="text/css" href="css_animation_keyframes.css">
+    </head>
+
+  <body>
+
+  <div class="column">
+
+    <div id="header"><i>Clear iSight</i></div>
+    <p><i id="slogan">Exercise Your Eyes</i></p>
+    <br>
+
+    <div class="button-container"> <!-- main buttons unit -->
+      <button class="g1 active" onclick="pickUnit('unit',0);pickUnit('container',0);highLight('g1',0)">
+        <i class="fas fa-desktop"></i>
+      </button>
+      <button class="g1" onclick="pickUnit('unit',1);pickUnit('container',0);highLight('g1',1)">
+        <i class="fas fa-bars"></i>
+      </button>
+      <button class="g1" onclick="pickUnit('unit',2);pickUnit('container',0);highLight('g1',2)">
+        <i class="fas fa-cog"></i>
+      </button>
+      <button class="g1" onclick="pickUnit('unit',3);pickUnit('container',0);highLight('g1',3)">
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </div>
+    <br>
+    
+    <div id="border">
+      <div class="container"> <!-- animation container -->
+        <div id="animate">
+          <div id="spot"></div>
+        </div>
+      </div>
+      <form method="post" class="container" id="mailForm" style="display:none;padding:0.1px 10px 0 10px"><!-- mail container -->
+        <input class="mail" id="name" type="text" placeholder="Name" name="Name" />
+        <input class="mail" id="email" type="text" placeholder="Email" name="Email" />
+        <input class="mail" id="subject" type="text" placeholder="Subject" name="Subject" />
+        <textarea class="mail" id="comment" type="text" placeholder="Comment" name="Comment" rows="4"></textarea>
+      </form>
+    </div>
+    <br>
+      
+    <div class="unit"> <!-- animation buttons unit -->
+      <div class="button-container">
+        <button class="g2 active" onclick="stopAnimation();highLight('g2',0)">
+          <i class="fas fa-stop"></i>
+        </button>
+        <button class="g2" onclick="pauseAnimation();highLight('g2',1)">
+          <i class="fas fa-pause"></i>
+        </button>
+        <button class="g2" onclick="playAnimation();highLight('g2',2)">
+          <i class="fas fa-play"></i>
+        </button>
+        <button class="g2" onclick="openFullscreen()">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </button>
+      </div>
+      <!-- to do : next set
+        <button class="g2" onclick="nextStep();highLight('g2',3)">
+          <i class="fas fa-step-forward"></i>
+        </button>
+        -->
+    </div>
+    
+    <div style="display:none" class="unit"> <!-- change animation unit -->
+      <button class="g3 active" onclick="changeAnimation(0);highLight('g3',0)"><b>1</b></button>
+      <button class="g3" onclick="changeAnimation(1);highLight('g3',1)"><b>2</b></button>
+      <button class="g3" onclick="changeAnimation(2);highLight('g3',2)"><b>3</b></button>
+      <button class="g3" onclick="changeAnimation(3);highLight('g3',3)"><b>4</b></button>
+   </div>
+   
+   <div class="unit" style="display:none">
+      <div> <!-- settings unit -->
+        <button class="g4 active" onclick="toggleTheme();toggleLight('g4',0)">
+          <i class="fas fa-moon"></i>
+        </button> 
+        <button class="g4" onclick="toggleAllowMusic();toggleLight('g4',1)">
+          <i class="fas fa-music"></i>
+        </button>
+        <button class="g4" onclick="toggleAllowFullscreen();toggleLight('g4',2)">
+          <i class="fas fa-arrows-alt"></i>
+        </button>
+        <button class="g4" onclick="toggleAllowNextSet();toggleLight('g4',3)">
+          <i class="fas fa-redo-alt"></i>
+        </button>
+      </div>
+      <!-- colors unit
+      <br>
+      <div> 
+        <input type="color" id="ballcolor" value="#FFD700" onchange="changeBallcolor(this.value)">
+        <input type="color" id="backcolor" value="#000000" onchange="changeBackcolor(this.value)">
+      </div> -->
+    </div>
+
+    <div class="unit" style="display:none"> <!-- contact buttons unit -->
+      <button class="g5" onclick="window.open('https://www.instagram.com/clearisight/',target='_self');highLight('g5',0)">
+        <i class="fab fa-instagram"></i>
+      </button>
+      <button class="g5" onclick="window.open('https://twitter.com/clearisight',target='_self');highLight('g5',1)">
+        <i class="fab fa-twitter"></i>
+      </button>
+      <button class="g5" onclick="window.open('https://github.com/Vorvule/clearisight',target='_self');highLight('g5',2)">
+        <i class="fab fa-github"></i>
+      </button>
+      <button class="g5" onclick="toggleMail();highLight('g5',3)">
+        <i class="far fa-envelope"></i>
+      </button>
+    </div>
+    
+    <br>
+    <div class="unit" id="mailButtons" style="display:none"> <!-- mail buttons unit -->
+      <button class="g6 active" onclick="resetForm();highLight('g6',0)">
+        <i class="fas fa-eraser"></i>
+      </button>
+      <button class="g6" onclick="sendMail();highLight('g6',1)">
+        <i class="fas fa-share"></i>
+      </button>
+    </div>
+  
+  </div>
+  
+  <audio loop id="aud"><source src="common/music.mp3" type="audio/mpeg"></audio> 
+  
+  <script src="js_animation_variables.js"></script>
+  <script src="js_layout_functions.js"></script>
+  <script src="js_animation_functions.js"></script>
+  <script src="js_globals_listeners.js"></script>
+  <script src="js_localize_functions.js"></script>
+
+</body>
+</html>
