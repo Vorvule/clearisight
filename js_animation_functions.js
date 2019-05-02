@@ -12,7 +12,7 @@ function playAnimation() {
       anim.style.WebkitAnimationPlayState = "running";
       animationStatus = "playing";
       break;
-    case "changed":
+    case "selected":
       stopAnimation();
       animationStep = -1;
       animationStatus = "playing";
@@ -52,10 +52,10 @@ function pauseAnimation() {
 }
 
 // CHANGE
-function changeAnimation(val) {
+function selectAnimation(val) {
   currentSet = Number(val);
   animationSet = animationSets[currentSet];
-  animationStatus = "changed";
+  animationStatus = "selected";
 }
 
 // STOP

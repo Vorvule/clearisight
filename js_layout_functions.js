@@ -137,11 +137,11 @@ function toggleLight(focusClass, activeIndex) {
 
 // COLORS
 /*
-function changeBallcolor(val) {
+function selectBallcolor(val) {
   anim.style.backgroundColor = val;
 }
 
-function changeBackcolor(val) {
+function selectBackcolor(val) {
   cont.style.backgroundColor = val;
 }
 

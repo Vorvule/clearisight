@@ -2,10 +2,10 @@ var aud = document.getElementById("aud");
 var cont = document.getElementsByClassName("container")[0];
 var anim = document.getElementById("animate");
 
-var musicAllowed = false;
-var fullscreenAllowed = false;
 var theme = "dark";
-var nextSetAllowed = false;
+var musicAllowed = true;
+var fullscreenAllowed = true;
+var nextSetAllowed = true;
 
 var animationStep = -1;
 var currentSet = 0;

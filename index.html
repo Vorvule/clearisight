@@ -33,8 +33,8 @@
 
   <div class="column">
 
-    <div id="header"><i>Clear iSight</i></div>
-    <p><i id="slogan">Exercise Your Eyes</i></p>
+    <div id="header">Clear iSight</div>
+    <p id="slogan">Exercise Your Eyes</p>
     <br>
 
     <div class="button-container"> <!-- main buttons unit -->
@@ -90,33 +90,33 @@
         -->
     </div>
     
-    <div style="display:none" class="unit"> <!-- change animation unit -->
-      <button class="g3 active" onclick="changeAnimation(0);highLight('g3',0)"><b>1</b></button>
-      <button class="g3" onclick="changeAnimation(1);highLight('g3',1)"><b>2</b></button>
-      <button class="g3" onclick="changeAnimation(2);highLight('g3',2)"><b>3</b></button>
-      <button class="g3" onclick="changeAnimation(3);highLight('g3',3)"><b>4</b></button>
+    <div style="display:none" class="unit"> <!-- select animation unit -->
+      <button class="g3 active" onclick="selectAnimation(0);highLight('g3',0)"><b>1</b></button>
+      <button class="g3" onclick="selectAnimation(1);highLight('g3',1)"><b>2</b></button>
+      <button class="g3" onclick="selectAnimation(2);highLight('g3',2)"><b>3</b></button>
+      <button class="g3" onclick="selectAnimation(3);highLight('g3',3)"><b>4</b></button>
    </div>
    
-   <div class="unit" style="display:none">
-      <div> <!-- settings unit -->
+   <div class="unit" style="display:none"> <!-- settings unit -->
+      <div>
         <button class="g4 active" onclick="toggleTheme();toggleLight('g4',0)">
           <i class="fas fa-moon"></i>
         </button> 
-        <button class="g4" onclick="toggleAllowMusic();toggleLight('g4',1)">
+        <button class="g4 active" onclick="toggleAllowMusic();toggleLight('g4',1)">
           <i class="fas fa-music"></i>
         </button>
-        <button class="g4" onclick="toggleAllowFullscreen();toggleLight('g4',2)">
+        <button class="g4 active" onclick="toggleAllowFullscreen();toggleLight('g4',2)">
           <i class="fas fa-arrows-alt"></i>
         </button>
-        <button class="g4" onclick="toggleAllowNextSet();toggleLight('g4',3)">
+        <button class="g4 active" onclick="toggleAllowNextSet();toggleLight('g4',3)">
           <i class="fas fa-redo-alt"></i>
         </button>
       </div>
       <!-- colors unit
       <br>
       <div> 
-        <input type="color" id="ballcolor" value="#FFD700" onchange="changeBallcolor(this.value)">
-        <input type="color" id="backcolor" value="#000000" onchange="changeBackcolor(this.value)">
+        <input type="color" id="ballcolor" value="#FFD700" onchange="selectBallcolor(this.value)">
+        <input type="color" id="backcolor" value="#000000" onchange="selectBackcolor(this.value)">
       </div> -->
     </div>
 

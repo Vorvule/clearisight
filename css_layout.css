@@ -15,8 +15,14 @@ body {
 #header {
   font-size: 32px;
   font-weight: bold;
+  font-style: italic;
   padding: 32px 0;
-  color: rgb(255, 165, 0);
+  color: chartreuse;
+}
+
+#slogan {
+  color: gold;
+  font-style: italic;
 }
 
 .column {
@@ -106,6 +112,19 @@ button {
   color:white;
   font-size: 16px;
 } /* Microsoft Edge */
+
+/* Responsive layout */
+@media screen and (max-width: 360px) {
+  #header { padding: 8px 0 0; }
+  #slogan { display: none; }
+}
+
+
+
+
+
+
+
 /*
 input[type="color"] {
 	-webkit-appearance: none;
