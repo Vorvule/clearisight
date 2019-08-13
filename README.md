@@ -1,2 +1,2 @@
-# clearisight
-Eyesight gymnastics and ocular exercises at clearisight.com
+# clearisight.com
+Eyesight gymnastics and ocular exercises
